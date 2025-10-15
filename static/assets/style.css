@@ -1,0 +1,253 @@
+/* ======================================
+   GLOBAL STYLES
+====================================== */
+body {
+  color: #222;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0 10px;
+  /* font-family: "Poppins", "Times New Roman", serif; */
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Times New Roman", serif;
+  font-size: 36px;
+  color: #6c2eb9;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* ======================================
+   NAVBAR
+====================================== */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #9b5de5, #00bbf9);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+li {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+a.active {
+  background-color: #f15bb5;
+  border-radius: 6px;
+}
+
+/* ======================================
+   TABLE
+====================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+table thead {
+  background-color: #9b5de5;
+  color: white;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #e2d3fa;
+}
+
+tr:nth-child(even) {
+  background-color: #f5ebff;
+}
+
+tr:hover {
+  background-color: #efe3ff;
+}
+
+/* scrollable table for small screens */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* ======================================
+   FORM ELEMENTS
+====================================== */
+input[type='text'], textarea, select, input[type='date'] {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 18px;
+  /* font-family: ""; */
+  font-family: 'Dancing Script', 'Poppins', sans-serif;
+  background-color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+input[type='text']:hover,
+textarea:hover,
+select:hover,
+input[type='date']:hover {
+  border-color: #9b5de5;
+  box-shadow: 0 4px 12px rgba(155,93,229,0.25);
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+
+/* ======================================
+   BUTTONS
+====================================== */
+.glossy-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #9b5de5, #f15bb5);
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.glossy-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(155, 93, 229, 0.3);
+}
+
+.glossy-button--blue {
+  background: linear-gradient(135deg, #00bbf9, #4facfe);
+}
+
+.glossy-button--red {
+  background: linear-gradient(135deg, #ff595e, #f15bb5);
+}
+
+.btn_edit,
+.btn_del {
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn_edit {
+  background-color: #27ae60;
+}
+.btn_edit:hover {
+  background-color: #2ecc71;
+}
+
+.btn_del {
+  background-color: #e74c3c;
+}
+.btn_del:hover {
+  background-color: #ff6b6b;
+}
+
+/* ======================================
+   RESPONSIVE DESIGN
+====================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  table {
+    font-size: 15px;
+  }
+
+  .glossy-button {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  input, select, textarea {
+    max-width: 100%;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  table, th, td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  li {
+    flex: 1 1 100%;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .glossy-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .btn_edit, .btn_del {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+
+
+
+/* ==== */
+
+i.fa.fa-search {
+    /* background: orange; */
+    margin-left:20px ;
+}
